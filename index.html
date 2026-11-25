@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <p>Você encontrou um mapa antigo na biblioteca da escola. Qual caminho seguir?</p>
+            <button class="btn-proximo" data-proximo="1">Seguir pela trilha da floresta</button>
+            <button class="btn-proximo" data-proximo="2">Investigar a torre abandonada</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>A trilha da floresta está bloqueada por uma ponte quebrada.</p>
+            <button class="btn-proximo" data-proximo="3">Tentar atravessar pelo rio</button>
+            <!-- Botão de voltar apontando para o passo-0 -->
+            <button class="btn-voltar" data-voltar="0">Voltar ao início</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>A porta da torre está trancada com um cadeado numérico.</p>
+            <button class="btn-voltar" data-voltar="0">Voltar ao início</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
